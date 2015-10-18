@@ -1,11 +1,11 @@
-abe-fakepackages (17~dev) UNRELEASED; urgency=medium
+abe-fakepackages (17) unstable; urgency=medium
 
   * Split off abe-fakepackages (colord, fake-consolekit, and
     fake-accountsservice) from abe-metapackages because versioned provides
     only work with Jessie and above and those no-op replacment packages
     don't really fit into the abe-metapackages source package.
 
- -- Axel Beckert <abe@deuxchevaux.org>  Sun, 18 Oct 2015 15:46:01 +0200
+ -- Axel Beckert <abe@deuxchevaux.org>  Sun, 18 Oct 2015 16:57:40 +0200
 
 abe-metapackages (16) unstable; urgency=medium
 
