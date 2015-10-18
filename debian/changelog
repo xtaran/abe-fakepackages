@@ -1,4 +1,4 @@
-abe-fakepackages (17) UNRELEASED; urgency=medium
+abe-fakepackages (17~dev) UNRELEASED; urgency=medium
 
   * Split off abe-fakepackages (colord, fake-consolekit, and
     fake-accountsservice) from abe-metapackages because versioned provides
