@@ -6,6 +6,13 @@ packages in Debian have hard dependencies on packages they don't
 really need and hence need fake packages to satisfy these
 dependencies.
 
+The packages in here were previously part of my
+[abe-metapackages](https://github.com/xtaran/abe-metapackages) source
+packages, but have been split off. Reasons for the split-off were
+being able to use versioned provides while abe-metapackages still
+should be usable on Debian 6 Squeeze and Debian 7 Jessie, and because
+they didn't really fit into that source package.
+
 Packages
 --------
 
