@@ -1,82 +1,36 @@
-Axel’s Metapackages
-===================
+Axel’s No-Op Replacement Packages
+=================================
 
-History
--------
-
-For my
-[desktop setup](https://github.com/xtaran/ratpoison-desktop#readme) I
-started maintaining metapackages which constitute the packaged
-dependencies of the setup.
-
-After a while the list of metapackages started to contain other stuff
-which had no direct relation to the desktop setup anymore and most
-desktop setup commits affected unrelated metapackages rather than the
-desktop setup itself. So I decided to split the git repository up into
-two repositories.
+These packages are solely there, because some (mostly GNOME related)
+packages in Debian have hard dependencies on packages they don't
+really need and hence need fake packages to satisfy these
+dependencies.
 
 Packages
 --------
 
 The repository contains source code for the following packages:
 
-### abe-commandline
+### colord
 
-Commandline tools I usually want on all my boxes. Its hard
-dependencies are also suitable for servers.
+The sole purpose of this package is to fulfill gnome-control-center
+3.8.x's silly dependency on colord which pulls in ConsoleKit and
+PolicyKit which are usually unwanted on lean systems.
 
-### abe-commandline-media
+Should be named fake-colord, but that doesn't work until dpkg and apt
+support versioned Provides (which they do since Jessie).
 
-Commandline tools I usually want for playing audio or video files.
+### fake-consolekit
 
-### abe-console
+The sole purpose of this empty dummy package is to fulfill
+e.g. lxsession 0.5.x's but also other packages' unnecessary dependency
+on consolekit.
 
-Packages I usually want to have installed on boxes where I have local
-console access like laptops, desktops, etc. In other words, it's not
-needed on most virtual machines or rented root servers.
+### fake-accountsservice
 
-### abe-emacs
-
-Emacs modes and other Emacs add-ons I usually want on all boxes where
-I install GNU Emacs anyway.
-
-### abe-gnome
-
-GUI tools and applications I usually install if some GNOME
-dependencies are ok.
-
-### abe-laptop
-
-Packages I commonly need on laptops and netbooks. ACPI stuff, resource
-saving and monitoring stuff, …
-
-### abe-laptop-ubuntu
-
-Satisfies some of ubuntu-minimal’s annoying hard dependencies to be
-able to e.g. install a different syslog daemon without removing the
-ubuntu-minimal metapackage.
-
-### abe-office
-
-Depends on the LibreOffice and Gnome Office applications I prefer.
-
-### abe-partitioning
-
-Depends on tools I prefer to partition USB sticks or disks, stuff for
-disaster recovery of disks or for forensic analysis of disks. Usually
-not needed inside virtual machines.
-
-### abe-small-disk
-
-Conflicts with packages I consider a waste of disk space, at least if
-disk space is sacre. It also pulls in some small packages which help
-to find local waste of disk-space.
-
-### abe-window-managers
-
-Depends on a bunch of (mostly exotic) window managers and desktop
-environments, I want to have on those computers where occassionally
-other people log in, too.
+The sole purpose of this empty dummy package is to fulfill
+e.g. gnome-control-center's but also other packages' unnecessary
+dependency on accountsservice.
 
 APT Repository
 --------------
