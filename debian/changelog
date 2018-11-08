@@ -1,3 +1,9 @@
+abe-fakepackages (18) UNRELEASED; urgency=medium
+
+  * Add fake-libpam-systemd package.
+
+ -- Axel Beckert <abe@deuxchevaux.org>  Fri, 09 Nov 2018 00:14:11 +0100
+
 abe-fakepackages (17) unstable; urgency=medium
 
   * Split off abe-fakepackages (colord, fake-consolekit, and

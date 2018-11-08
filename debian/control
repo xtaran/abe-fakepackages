@@ -33,6 +33,15 @@ Description: Dummy package to ignore unnecessary dependencies on consolekit
  e.g. lxsession 0.5.x's but also other packages' unnecessary
  dependency on consolekit.
 
+Package: fake-libpam-systemd
+Provides: libpam-systemd (= ${binary:Version})
+Architecture: all
+Depends: ${misc:Depends}
+Description: Dummy package to ignore unnecessary dependencies on libpam-systemd
+ The sole purpose of this empty dummy package is to fulfill
+ e.g. policykit's but also other packages' unnecessary dependency on
+ libpam-systemd.
+
 Package: fake-accountsservice
 Provides: accountsservice (= ${binary:Version}),
           prevent-accountsservice
