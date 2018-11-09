@@ -3,6 +3,7 @@ abe-fakepackages (18) UNRELEASED; urgency=medium
   * Add fake-libpam-systemd package.
   * Use "Priority: optional" instead of the deprecated "extra".
   * Shorten short descriptions to please lintian.
+  * Remove trailing blank line from debian/changelog.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Fri, 09 Nov 2018 00:14:11 +0100
 
@@ -462,4 +463,3 @@ abe-desktop (0) unstable; urgency=low
   * Initial package
 
  -- Axel Beckert <abe@deuxchevaux.org>  Sat, 24 Dec 2011 14:32:20 +0100
-
