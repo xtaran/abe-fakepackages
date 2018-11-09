@@ -6,6 +6,7 @@ abe-fakepackages (18) UNRELEASED; urgency=medium
   * Remove trailing blank line from debian/changelog.
   * Use HTTPS in Vcs-Git header and DEP5 format URL.
   * Declare compliance with Debian Policy 4.2.1.
+  * Use debhelper compat level 11.
 
  -- Axel Beckert <abe@deuxchevaux.org>  Fri, 09 Nov 2018 00:14:11 +0100
 
