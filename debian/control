@@ -14,7 +14,7 @@ Architecture: all
 Depends: ${misc:Depends}
 Provides: fake-colord,
           prevent-colord
-Description: Dummy package to override silly gnome-control-center dependencies
+Description: Dummy package to override dependencies on colord
  The sole purpose of this package is to fulfill gnome-control-center
  3.8.x's silly dependency on colord which pulls in ConsoleKit and
  PolicyKit which are usually unwanted on lean systems.
@@ -28,7 +28,7 @@ Provides: consolekit (= ${binary:Version}),
 XB-Important: yes
 Architecture: all
 Depends: ${misc:Depends}
-Description: Dummy package to ignore unnecessary dependencies on consolekit
+Description: Dummy package to ignore dependencies on consolekit
  The sole purpose of this empty dummy package is to fulfill
  e.g. lxsession 0.5.x's but also other packages' unnecessary
  dependency on consolekit.
@@ -37,7 +37,7 @@ Package: fake-libpam-systemd
 Provides: libpam-systemd (= ${binary:Version})
 Architecture: all
 Depends: ${misc:Depends}
-Description: Dummy package to ignore unnecessary dependencies on libpam-systemd
+Description: Dummy package to ignore dependencies on libpam-systemd
  The sole purpose of this empty dummy package is to fulfill
  e.g. policykit's but also other packages' unnecessary dependency on
  libpam-systemd.
@@ -48,7 +48,7 @@ Provides: accountsservice (= ${binary:Version}),
 XB-Important: yes
 Architecture: all
 Depends: ${misc:Depends}
-Description: Dummy package to ignore unnecessary dependencies on accountsservice
+Description: Dummy package to ignore dependencies on accountsservice
  The sole purpose of this empty dummy package is to fulfill
  e.g. gnome-control-center's but also other packages' unnecessary
  dependency on accountsservice.
