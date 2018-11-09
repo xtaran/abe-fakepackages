@@ -1,6 +1,7 @@
 abe-fakepackages (18) UNRELEASED; urgency=medium
 
   * Add fake-libpam-systemd package.
+  * Use "Priority: optional" instead of the deprecated "extra".
 
  -- Axel Beckert <abe@deuxchevaux.org>  Fri, 09 Nov 2018 00:14:11 +0100
 

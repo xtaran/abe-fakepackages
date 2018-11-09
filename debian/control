@@ -1,7 +1,7 @@
 Source: abe-fakepackages
 Maintainer: Axel Beckert <abe@deuxchevaux.org>
 Section: metapackages
-Priority: extra
+Priority: optional
 Homepage: https://github.com/xtaran/abe-fakepackages#readme
 Vcs-Git: git://github.com/xtaran/abe-fakepackages.git
 Vcs-Browser: https://github.com/xtaran/abe-fakepackages
